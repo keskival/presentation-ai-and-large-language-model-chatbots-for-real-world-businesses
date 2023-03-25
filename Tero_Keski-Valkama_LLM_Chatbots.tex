@@ -46,7 +46,8 @@
 \section{Inside Chatbots}
 \begin{frame}{Inside Chatbots}
 \center
-\includegraphics[height=9cm]{Full_GPT_architecture.png}
+\includegraphics[height=7.5cm]{Full_GPT_architecture.png}
+\footnote{\textcolor{blue}{\href{https://commons.wikimedia.org/w/index.php?curid=127066752}{By Marxav - Own work, CC0}}}
 \end{frame}
 
 \begin{frame}{Inside Chatbots}
@@ -75,6 +76,15 @@ You need to be able to explain the task to the chatbot clearly and concisely. Th
 
 You can play around and test whether they are able to do what you want them to do in \textcolor{blue}{\href{https://chat.openai.com}{OpenAI ChatGPT frontend}}. When deploying you just use the \textcolor{blue}{\href{https://platform.openai.com/overview}{API}} they offer with Python language. The ChatGPT API costs a bit, but they tend to give some free credits for experimentation.
 \end{frame}
+
+\begin{frame}{Tips and Tricks}
+You would typically integrate a chatbot to perform a task by making a small \textbf{Python} code which calls the chatbot API when something happens, give it some amount of carefully designed context, and utilize its responses to make decisions or generate answers.
+
+To keep the amount of context you give to the chatbot for every task you make it to do you can decompose the knowledge \textbf{hierarchically}. In effect you ask the chatbot whether the context it got relates to some topic, and depending on its answer, you clear the session and start from scratch, now performing a \textbf{subtask}. You do this for all separate subtasks and then collect together the answers in some way.
+
+Alternatively you can make your \textbf{knowledge base} searchable by the chatbot so that it can ask specific information it needs from it only when it needs it.
+\end{frame}
+
 
 \section{Future}
 \begin{frame}{Future}
