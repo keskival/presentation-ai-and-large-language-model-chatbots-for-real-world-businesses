@@ -51,7 +51,7 @@
 \end{frame}
 
 \begin{frame}{Inside Chatbots}
-So, Large Language Model (LLM) chatbots are based on a \textbf{Transformer} (or an RNN) architecture which is trained \textbf{autoregressively} on text (plus tricks). They only predict the next token (part-of-word) given what text comes before.
+So, Large Language Model (LLM) chatbots are based on a \textbf{Transformer} (or an RNN) architecture which is trained \textbf{autoregressively} on text (plus tricks like RLHF). They only predict the next token (part-of-word) given what text comes before.
 
 \vspace{0.5cm}
 
@@ -66,7 +66,7 @@ How can we use their learned knowledge? Just train them to \textbf{emulate an as
 
 \section{Using Chatbots in Business}
 \begin{frame}{Using Chatbots in Business}
-Chatbots know all of \textbf{Wikipedia} by heart but they don't know about your business. Whatever task you put them to perform, they need to know what you want.
+Chatbots know all of \textbf{Wikipedia} by heart but they don't know about \textbf{your business}. Whatever task you put them to perform, they need to know what you want.
   \begin{itemize}
     \item \textbf{``NEVER give money back for complaints!''}
   \end{itemize}
@@ -74,27 +74,55 @@ You need to be able to explain the task to the chatbot clearly and concisely. Th
 
 \vspace{0.5cm}
 
-You can play around and test whether they are able to do what you want them to do in \textcolor{blue}{\href{https://chat.openai.com}{OpenAI ChatGPT frontend}}. When deploying you just use the \textcolor{blue}{\href{https://platform.openai.com/overview}{API}} they offer with Python language. The ChatGPT API costs a bit, but they tend to give some free credits for experimentation.
+You can play around and test whether they are able to do what you want them to do in \textcolor{blue}{\href{https://chat.openai.com}{OpenAI ChatGPT frontend}} or with \textcolor{blue}{\href{https://platform.openai.com/playground?mode=chat&model=gpt-4}{Playground}}. When deploying you just use the \textcolor{blue}{\href{https://platform.openai.com/overview}{API}} they offer with e.g. Python or Java language. The ChatGPT API costs a bit, but they tend to give some free credits for experimentation.
 \end{frame}
 
 \begin{frame}{Tips and Tricks}
-You would typically integrate a chatbot to perform a task by making a small \textbf{Python} code which calls the chatbot API when something happens, give it some amount of carefully designed context, and utilize its responses to make decisions or generate answers.
+You would typically integrate a chatbot to perform a task by making a small \textbf{Python} code which calls the \textbf{chatbot API} when something happens, give it some amount of \textbf{carefully designed context}, and utilize its responses to \textbf{make decisions} or \textbf{generate answers}.
 
-To keep the amount of context you give to the chatbot for every task you make it to do you can decompose the knowledge \textbf{hierarchically}. In effect you ask the chatbot whether the context it got relates to some topic, and depending on its answer, you clear the session and start from scratch, now performing a \textbf{subtask}. You do this for all separate subtasks and then collect together the answers in some way.
+To limit the amount of context you give to the chatbot for every task you make it to do you can \textbf{decompose} the knowledge \textbf{hierarchically}. In effect you ask the chatbot whether the context it got relates to some topic, and depending on its answer, you clear the session and start from scratch, now performing a \textbf{subtask}. You do this for all separate subtasks and then collect together the answers in some way.
 
 Alternatively you can make your \textbf{knowledge base} searchable by the chatbot so that it can ask specific information it needs from it only when it needs it.
 \end{frame}
 
 
 \section{Future}
-\begin{frame}{Future}
-AIs will not match, they will \textbf{exceed all meaningful human cognitive capabilities} during this year.
+\begin{frame}{Future - People}
+AIs will not match, they will \textbf{exceed all meaningful human cognitive capabilities} during this year. The progress is still \textbf{superexponential}.
 
 What skills are important in the immediate future?
   \begin{itemize}
     \item \textbf{Clarity of thought}, \textbf{understanding} what is possible, and skill to \textbf{write} your knowledge, ideas and wants \textbf{clearly} to machines.
     \item \textbf{Empathy} and capability to understand the points of view of others, specifically of chatbots but also of other people. What don't they understand, and how to explain it to them better?
+    \item \textbf{Connect} with people you \textbf{trust}. It is fast becoming impossible to tell the difference between a real person and a bot just over the net, even over video calls.
   \end{itemize}
 \end{frame}
+
+\begin{frame}{Future - Businesses 1/2}
+What about businesses?
+\begin{itemize}
+    \item Be prepared to serve AIs; they can be your users through natural language APIs, or your customers deriving value from your assets.
+    \item Chatbots form a new \textbf{service provisioning channel} along with web and mobile apps. Chatbots will serve their users by calling your service on their behalf.
+    \item To do all that, the chatbots need to understand what your business is about and how it can help them. Just like with Web Services (WS-*) required businesses to describe their APIs in XML, chatbots now require businesses to introduce themselves to them and serve chatbots, whether internal or external.
+  \end{itemize}
+\end{frame}
+\begin{frame}{Future - Businesses 2/2}
+
+The most important question isn't whether your business or employees are automated or not, or where to gain efficiencies.
+
+It is whether \textbf{your business} will still have value in \textbf{a world full of AGI} next year.
+
+\textbf{Does it?}
+
+Does your business serve chatbots with knowledge assets and affordance interfaces?
+
+  \begin{itemize}
+    \item \textbf{Knowledge assets} are any type of information and knowledge, especially real-time or under constant updates, which keep being valuable for AIs of practically unlimited intelligence. The AI \textbf{hunger for knowledge} will be immeasurable.
+    \item \textbf{Affordance interfaces} are any type of APIs chatbots can use to effect changes in the real world. Ordering items, mobile robotics, tasking people or machines, all things which happen over the boundaries of information networks and the physical world. \textbf{Hands and legs} of AIs.
+  \end{itemize}
+
+
+\end{frame}
+
 
 \end{document}
